@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Painel Interativo dos Países</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1> Painel Interativo dos Países 🗺️ </h1>
+
+        <div class="busca-container">
+            <input id="inputPais" type="text" placeholder="Digite o nome de um país..." />
+            <button id="btnPesquisar">Pesquisar</button>
+        </div>
+
+        <div class="painel">
+            <div class="resultado" id="resultado"></div>
+
+            <div class="historico-box">
+                <h3>Histórico de Pesquisar</h3>
+                <ul id="listaHistorico"></ul>
+                <button id="btnLimpar">Limpar Histórico</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
