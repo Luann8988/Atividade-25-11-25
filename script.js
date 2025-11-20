@@ -1,3 +1,10 @@
+
+/* oiiii sou eu luann tudo bem */
+/* oiii sou eu luann */
+/* oiii sou eu boa noite */
+/* olaaa */
+/* blz */
+
 const inputPais = document.getElementById("inputPais");
 const btnPesquisar = document.getElementById("btnPesquisar");
 const resultado = document.getElementById("resultado");
@@ -9,7 +16,8 @@ let historico = JSON.parse(localStorage.getItem("historicoPaises")) || [];
 async function buscarPais(nome) {
   try {
     const resposta = await fetch(`https://restcountries.com/v3.1/name/${nome}`);
-    if (!resposta.ok) throw new Error("País não encontrado");
+
+    if (!resposta.ok) throw new Error("⚠️⚠️ País não encontrado");
     const dados = await resposta.json();
     mostrarDados(dados[0]);
     salvarHistorico(dados[0].name.common);
